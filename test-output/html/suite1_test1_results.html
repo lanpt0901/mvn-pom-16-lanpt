@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Run on Chrome</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Run on Chrome</h1>
+<p>
+  Test duration: 86.451s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.wordpress.login.Login_06_Log4j</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_01_LoginSuccessAndGoToDashboardFC
+      </td>
+  <td class="duration">
+    36.841s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2020-11-03 12:25:18,959 INFO&nbsp; com.wordpress.login.Login_06_Log4j - Login - Step 06: Go to My Site page<br/>
+<br />
+                                2020-11-03 12:25:18,961 INFO&nbsp; com.wordpress.login.Login_06_Log4j - Login- Step 02: Send Email or Username: automationeditor acc<br/>
+<br />
+                                2020-11-03 12:25:19,211 INFO&nbsp; com.wordpress.login.Login_06_Log4j - Login - Step 03: click to ContinueButton<br/>
+<br />
+                                2020-11-03 12:25:19,286 INFO&nbsp; com.wordpress.login.Login_06_Log4j - Login - Step 04: Send password<br/>
+<br />
+                                2020-11-03 12:25:20,029 INFO&nbsp; com.wordpress.login.Login_06_Log4j - Login - Step 05: Open Reader page - the first page<br/>
+<br />
+                                2020-11-03 12:25:25,737 INFO&nbsp; com.wordpress.login.Login_06_Log4j - Login - Step 06: Go to My Site page<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //header/h1[contains(@class, &apos;formatted-header__title&apos;)] (tried for 30 second(s) with 500 milliseconds interval)</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
+              pageObjects.wordpress.AbstractPage.waitForElementVisible(AbstractPage.java:370)<br />
+              pageObjects.wordpress.MySitePageObject.getHeaderSuccess(MySitePageObject.java:17)<br />
+              com.wordpress.login.Login_06_Log4j.TC_01_LoginSuccessAndGoToDashboardFC(Login_06_Log4j.java:73)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
+              org.testng.TestRunner.run(TestRunner.java:632)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//header/h1[contains(@class, &apos;formatted-header__title&apos;)]&quot;}<br/>
+&nbsp; (Session info: chrome=86.0.4240.111)<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-B6NQH76&apos;, ip: &apos;10.3.2.199&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\HAU\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50146}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 8e71684de5c05c3e703eed7b342f57af<br/>
+*** Element info: {Using=xpath, value=//header/h1[contains(@class, &apos;formatted-header__title&apos;)]}</a><br />
+        <div class="stackTrace" id="exception-1">
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
+                      pageObjects.wordpress.AbstractPage.waitForElementVisible(AbstractPage.java:370)<br />
+                      pageObjects.wordpress.MySitePageObject.getHeaderSuccess(MySitePageObject.java:17)<br />
+                      com.wordpress.login.Login_06_Log4j.TC_01_LoginSuccessAndGoToDashboardFC(Login_06_Log4j.java:73)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
+                      org.testng.TestRunner.run(TestRunner.java:632)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br />
+                      org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+                      java.util.concurrent.FutureTask.run(Unknown Source)<br />
+                      java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+                      java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+                      java.lang.Thread.run(Unknown Source)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_02_Element_Displayed_In_DOM
+      </td>
+  <td class="duration">
+    32.025s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2020-11-03 12:25:57,801 INFO&nbsp; com.wordpress.login.Login_06_Log4j - Element displayed - Step 01: check sub menu displayed in dom<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()=&apos;Stats&apos;] (tried for 30 second(s) with 500 milliseconds interval)</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
+              pageObjects.wordpress.AbstractPage.waitForElementVisible(AbstractPage.java:375)<br />
+              pageObjects.wordpress.MySitePageObject.isSubmenuDisplayed(MySitePageObject.java:22)<br />
+              com.wordpress.login.Login_06_Log4j.TC_02_Element_Displayed_In_DOM(Login_06_Log4j.java:80)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
+              org.testng.TestRunner.run(TestRunner.java:632)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Stats&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=86.0.4240.111)<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-B6NQH76&apos;, ip: &apos;10.3.2.199&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\HAU\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50146}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 8e71684de5c05c3e703eed7b342f57af<br/>
+*** Element info: {Using=xpath, value=//span[text()=&apos;Stats&apos;]}</a><br />
+        <div class="stackTrace" id="exception-3">
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
+                      pageObjects.wordpress.AbstractPage.waitForElementVisible(AbstractPage.java:375)<br />
+                      pageObjects.wordpress.MySitePageObject.isSubmenuDisplayed(MySitePageObject.java:22)<br />
+                      com.wordpress.login.Login_06_Log4j.TC_02_Element_Displayed_In_DOM(Login_06_Log4j.java:80)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
+                      org.testng.TestRunner.run(TestRunner.java:632)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br />
+                      org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+                      java.util.concurrent.FutureTask.run(Unknown Source)<br />
+                      java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+                      java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+                      java.lang.Thread.run(Unknown Source)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_03_Element_Undisplayed_Not_In_DOM
+      </td>
+  <td class="duration">
+    10.146s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2020-11-03 12:26:27,825 INFO&nbsp; com.wordpress.login.Login_06_Log4j - Element undisplayed - Step 01: check media sub menu displayed in dom<br/>
+<br />
+                                2020-11-03 12:26:32,901 INFO&nbsp; com.wordpress.login.Login_06_Log4j -&nbsp; -------------------------- FAILED -------------------------- <br/>
+<br />
+                                2020-11-03 12:26:32,905 INFO&nbsp; com.wordpress.login.Login_06_Log4j - Element undisplayed - Step 02: check settings sub menu displayed in dom<br/>
+<br />
+                                2020-11-03 12:26:37,970 INFO&nbsp; com.wordpress.login.Login_06_Log4j -&nbsp; -------------------------- FAILED -------------------------- <br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>java.lang.Throwable: Mulitple failures (2):<br/>
+Failure 1 of 2<br/>
+java.lang.AssertionError: expected [false] but found [true]<br/>
+	at org.testng.Assert.fail(Assert.java:94)<br/>
+	at org.testng.Assert.failNotEquals(Assert.java:513)<br/>
+	at org.testng.Assert.assertFalse(Assert.java:63)<br/>
+	at org.testng.Assert.assertFalse(Assert.java:73)<br/>
+	at commons.AbstractTest.checkFailed(AbstractTest.java:85)<br/>
+	at commons.AbstractTest.verifyFalse(AbstractTest.java:95)<br/>
+	at com.wordpress.login.Login_06_Log4j.TC_03_Element_Undisplayed_Not_In_DOM(Login_06_Log4j.java:86)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+	at java.lang.reflect.Method.invoke(Unknown Source)<br/>
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:632)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br/>
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br/>
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br/>
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br/>
+	at java.util.concurrent.FutureTask.run(Unknown Source)<br/>
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br/>
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br/>
+	at java.lang.Thread.run(Unknown Source)<br/>
+<br/>
+Failure 2 of 2<br/>
+java.lang.AssertionError: expected [false] but found [true]</b></a><br />
+    <div class="stackTrace" id="exception-4">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:513)<br />
+              org.testng.Assert.assertFalse(Assert.java:63)<br />
+              org.testng.Assert.assertFalse(Assert.java:73)<br />
+              commons.AbstractTest.checkFailed(AbstractTest.java:85)<br />
+              commons.AbstractTest.verifyFalse(AbstractTest.java:95)<br />
+              com.wordpress.login.Login_06_Log4j.TC_03_Element_Undisplayed_Not_In_DOM(Login_06_Log4j.java:88)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
+              org.testng.TestRunner.run(TestRunner.java:632)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>

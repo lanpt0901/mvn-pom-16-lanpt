@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Data Table]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Run on Chrome">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.datatable.Table_01_DynamicDataTable"/>
+    </classes>
+  </test> <!-- Run on Chrome -->
+</suite> <!-- Failed suite [Data Table] -->

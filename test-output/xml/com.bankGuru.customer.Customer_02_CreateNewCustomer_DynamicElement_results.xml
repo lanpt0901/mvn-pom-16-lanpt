@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Internet Explorer"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="56.843">
+  <properties />
+  
+  
+            <testcase name="TC_01_CreateNewCustomerSuccess" time="17.315" classname="com.bankGuru.customer.Customer_02_CreateNewCustomer_DynamicElement" />
+                <testcase name="TC_04_Verify_EditCustomerSuccess" time="7.363" classname="com.bankGuru.customer.Customer_02_CreateNewCustomer_DynamicElement" />
+                <testcase name="TC_02_Verify_CreateNewCustomerSuccess" time="13.735" classname="com.bankGuru.customer.Customer_02_CreateNewCustomer_DynamicElement" />
+                <testcase name="TC_03_EditCustomerSuccess" time="18.430" classname="com.bankGuru.customer.Customer_02_CreateNewCustomer_DynamicElement" />
+      
+</testsuite>

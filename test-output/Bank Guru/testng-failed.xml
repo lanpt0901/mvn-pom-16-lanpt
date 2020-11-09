@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Bank Guru]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <test name="Run on Chrome">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.bankGuru.common.Common_01_RegisterUser"/>
+      <class name="com.bankGuru.user.User_01_ValidateUser"/>
+      <class name="com.bankGuru.user.User_02_SearchUser"/>
+      <class name="com.bankGuru.user.User_03_EditUser"/>
+    </classes>
+  </test> <!-- Run on Chrome -->
+</suite> <!-- Failed suite [Bank Guru] -->

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bank Guru" parallel="classes">
+ 
+ <!--  <test name="Run on Firefox">
+  	<parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.bankGuru.login.HomePage_DynamicLocator"/>
+    </classes>
+  </test>   --> 
+  
+  <test name="Run on Chrome">
+  	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.bankGuru.common.Common_01_RegisterUser"/>
+      <class name="com.bankGuru.user.User_01_ValidateUser"/>
+      <class name="com.bankGuru.user.User_02_SearchUser"/>
+      <class name="com.bankGuru.user.User_03_EditUser"/>
+    </classes>
+  </test> 
+  
+  <!--  <test name="Run on ChromeHeadless">
+  	<parameter name="browser" value="chromeHeadless"></parameter>
+    <classes>
+      <class name="com.bankGuru.login.Login_01_RegisterOrLoginPage"/>
+    </classes>
+  </test> 
+  
+  <test name="Run on Edge">
+  	<parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="com.bankGuru.login.Login_01_RegisterOrLoginPage"/>
+    </classes>
+  </test>  -->
+</suite>

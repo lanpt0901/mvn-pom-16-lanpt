@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Word press]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="Run on Firefox">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.wordpress.media.Media_01_uploadFile"/>
+    </classes>
+  </test> <!-- Run on Firefox -->
+  <test name="Run on Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.wordpress.media.Media_01_uploadFile">
+        <methods>
+          <include name="TC_01_LoginSuccessAndGoToDashboardFC"/>
+          <include name="afterClass"/>
+          <include name="TC_02_uploadMultipleFile"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.wordpress.media.Media_01_uploadFile -->
+    </classes>
+  </test> <!-- Run on Firefox(failed) -->
+</suite> <!-- Failed suite [Word press] -->

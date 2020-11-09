@@ -1,0 +1,11 @@
+2020-11-03 12:25:18,959 INFO  com.wordpress.login.Login_06_Log4j - Login - Step 06: Go to My Site page
+2020-11-03 12:25:18,961 INFO  com.wordpress.login.Login_06_Log4j - Login- Step 02: Send Email or Username: automationeditor acc
+2020-11-03 12:25:19,211 INFO  com.wordpress.login.Login_06_Log4j - Login - Step 03: click to ContinueButton
+2020-11-03 12:25:19,286 INFO  com.wordpress.login.Login_06_Log4j - Login - Step 04: Send password
+2020-11-03 12:25:20,029 INFO  com.wordpress.login.Login_06_Log4j - Login - Step 05: Open Reader page - the first page
+2020-11-03 12:25:25,737 INFO  com.wordpress.login.Login_06_Log4j - Login - Step 06: Go to My Site page
+2020-11-03 12:25:57,801 INFO  com.wordpress.login.Login_06_Log4j - Element displayed - Step 01: check sub menu displayed in dom
+2020-11-03 12:26:27,825 INFO  com.wordpress.login.Login_06_Log4j - Element undisplayed - Step 01: check media sub menu displayed in dom
+2020-11-03 12:26:32,901 INFO  com.wordpress.login.Login_06_Log4j -  -------------------------- FAILED -------------------------- 
+2020-11-03 12:26:32,905 INFO  com.wordpress.login.Login_06_Log4j - Element undisplayed - Step 02: check settings sub menu displayed in dom
+2020-11-03 12:26:37,970 INFO  com.wordpress.login.Login_06_Log4j -  -------------------------- FAILED -------------------------- 

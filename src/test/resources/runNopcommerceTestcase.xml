@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Nopcommerce" parallel="classes">
+ 
+ <listeners>
+  	<listener class-name="commons.MethodListener" />
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> 
+    <!-- danh cho viec build Jenkin html thi build file xml dang JUNIT de lam input cho Jenkin de phan tich du lieu -->
+    <!-- Exntent report v2 -->
+    <!-- <listener class-name="reportConfig.ExtentReportListener"/> --> 
+    <!-- Exntent report v3 -->
+    <!-- <listener class-name="reportConfig.ExtentTestListener"/> -->
+    <!-- Exntent report v4 -->
+    <listener class-name="reportConfig.ExtentReportv4Listener"/>
+    
+  </listeners>
+ 
+   <!-- <test name="Run on chrome">
+  	<parameter name="browser" value="chrome"></parameter>
+  	<parameter name="url" value="https://demo.nopcommerce.com"></parameter>
+    <classes>
+      <class name="com.nopcommerce.Register_01_DataTest_In_Class" />
+    </classes>
+  </test>   -->
+  
+ <!--   <test name="Run on firefox">
+  	<parameter name="browser" value="firefox"></parameter>
+  	<parameter name="url" value="https://demo.nopcommerce.com"></parameter>
+  	<parameter name="firstName" value="Junia"></parameter>
+  	<parameter name="lastName" value="Robbert"></parameter>
+  	<parameter name="email" value="junro0211@gmail.com"></parameter>
+  	<parameter name="password" value="abxgbc"></parameter>
+  	<parameter name="company" value="vina"></parameter>
+    <classes>
+      <class name="com.nopcommerce.Register_01_DataTest_In_Xml" />
+    </classes>
+  </test> --> 
+  
+   <test name="Run on firefox">
+  	<parameter name="browser" value="firefox"></parameter>
+  	<parameter name="url" value="https://demo.nopcommerce.com"></parameter>
+    <classes>
+      <class name="com.nopcommerce.Register_01_DataTest_In_External_Json_File" />
+    </classes>
+  </test> 
+  
+<!--   <test name="Run on Coccoc">
+  	<parameter name="browser" value="coccoc"></parameter>
+  	<parameter name="url" value="https://demo.nopcommerce.com/desktops"></parameter>
+    <classes>
+      <class name="com.nopcommerce.Desktop_01_Sort" />
+    </classes>
+  </test>   -->
+  
+  <!--  <test name="Run on FirefoxHeadless">
+  	<parameter name="browser" value="firefoxHeadless"></parameter>
+  	<parameter name="url" value="https://demo.nopcommerce.com/desktops"></parameter>
+    <classes>
+      <class name="com.nopcommerce.Desktop_01_Sort" />
+    </classes>
+  </test>  -->
+  <!-- 
+   <test name="Run on Internet Explorer">
+  	<parameter name="browser" value="ie"></parameter>
+  	<parameter name="url" value="https://demo.nopcommerce.com/desktops"></parameter>
+    <classes>
+       <class name="com.nopcommerce.Desktop_01_Sort" /> 
+    </classes>
+  </test>  -->
+  
+</suite>
